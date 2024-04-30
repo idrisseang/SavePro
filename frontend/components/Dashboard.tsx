@@ -7,7 +7,7 @@ import { Card, CardContent} from "@/components/ui/card";
 export default function Dashboard(){
     return(
         <>
-            <Headline/>
+            <Headline title="Savings Dashboard" buttonText="See savings details"/>
             <Stats/>
             <section className="grid grid-col-1 gap-4 transition-all lg:grid-cols-2">
                 <ChartCard/>
