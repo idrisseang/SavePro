@@ -9,10 +9,6 @@ export const sections = [
         icon: BarChart2
     },
     {
-        text: "Setup",
-        icon: Cog
-    },
-    {
         text: "Savings",
         icon: PiggyBank
     },
