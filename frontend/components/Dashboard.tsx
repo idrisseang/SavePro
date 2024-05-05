@@ -3,11 +3,21 @@ import Headline from "@/components/Headline";
 import Stats from "@/components/Stats";
 import ChartCard from "@/components/ChartCard";
 import { Card, CardContent} from "@/components/ui/card";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Dashboard(){
     return(
         <>
-            <Headline title="Savings Dashboard" buttonText="See savings details"/>
+            <Headline 
+            title="Savings Dashboard" 
+            children={
+                <Link href="/savings">
+                    <Button>See savings details</Button>
+                </Link>
+            }
+            
+            />
             <Stats/>
             <section className="grid grid-col-1 gap-4 transition-all lg:grid-cols-2">
                 <ChartCard/>
